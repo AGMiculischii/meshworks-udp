@@ -22,6 +22,7 @@ class CEL_UDP_Handler(socketserver.BaseRequestHandler):
 
 if __name__ == "__main__":
     PORT = 5555
-    localserver = ("192.168.22.225", PORT)
+    ADDRESS = '192.168.22.225'
+    localserver = (ADDRESS, PORT)
     server = socketserver.UDPServer(localserver, CEL_UDP_Handler)
     server.serve_forever()
