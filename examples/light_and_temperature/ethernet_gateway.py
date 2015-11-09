@@ -42,7 +42,7 @@ def cpCallbackDataPointMessageReceived(deviceName, datapointName, discreteValueS
             udpPayload = deviceName
             udpPayload = (udpPayload + ": temp=")
             udpPayload = (udpPayload + rangeValue)
-            udp.send("192.168.22.225", 5555, udpPayload)  
+            udp.send("192.168.22.225", 5555, udpPayload)
 
 def main():
     pass
