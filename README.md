@@ -31,7 +31,7 @@ udpPayload = (udpPayload + ": button=")
 # append value which sensor node sended to the gateway
 udpPayload = (udpPayload + rangeValue)
 # send that payload to the server
-# according to Meshwork syntax - address is string, port is int, udpPayload is
+# according to MeshWorks syntax - address is string, port is int, udpPayload is
 # string
 udp.send("<address>", port, udpPayload)
 ```
